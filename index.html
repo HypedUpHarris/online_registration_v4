@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>The Code Review</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -16,27 +18,29 @@
       <p class="intro-message">Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
-    <div class="contact">
+
       <form action="index.html" method="post">
-        <fieldset>
+        <div class="contact">
+        <fieldset class="first">
           <legend>Contact Information</legend>
-          <label for="full-name">Full name</label>
-          <input type="text" id="full-name" name="name" placeholder="Required">
+          <label class="right" for="full-name">Full name</label>
+          <input required type="text" id="full-name" name="name" placeholder="Required">
 
-          <label for="user-email">Email Address</label><br>
-          <input type="email" id="user-email" name="user-email" placeholder="Required"><br>
+          <label class="right" for="user-email">Email Address</label>
+          <input required type="email" id="user-email" name="user-email" placeholder="Required">
 
-          <label for="phone-number">Phone Number</label><br>
-          <input type="tel" id="phone-number" name="phone-number"><br>
+          <label class="right" for="phone-number">Phone Number</label>
+          <input required type="tel" id="phone-number" name="phone-number" placeholder="(123) 555-1234">
 
-          <label for="address">Street Address</label><br>
-          <input type="text" id="address" name="address"><br>
+          <label class="right" for="address">Street Address</label>
+          <input required type="text" id="address" name="address" placeholder="742 Evergreen Terrace">
 
-          <label for="city">City</label><br>
-          <input type="text" id="city" name="city"><br>
+          <label class="right" for="city">City</label>
+          <input required type="text" id="city" name="city" placeholder="Springfield">
 
-          <label for="state">State</label><br>
-          <select id="state" name="state" placeholder="Choose State">
+          <label class="right" for="state">State</label>
+          <select required id="state" name="state">
+            <option label="--Choose State--" value=""></option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
             <option value="arizona">Arizona</option>
@@ -89,8 +93,8 @@
             <option value="wyoming">Wyoming</option>
           </select><br>
 
-          <label for="zip-code">Zip Code</label><br>
-          <input class="zip" type="text" id="zip-code" name="zip-code">
+          <label class="right" for="zip-code">Zip Code</label>
+          <input required class="zip" type="text" id="zip-code" name="zip-code" placeholder="12345">
         </fieldset>
       </div>
 
@@ -105,7 +109,7 @@
           <input type="checkbox" id="javascript" name="newsletter" value="javascript-news">
           <label for="javascript">Javascript News</label><br><br>
 
-          <label class="choices">Newsleter format</label><br>
+          <label class="choices">Newsleter format</label>
           <input type="radio" id="html-format" name="format" value="html">
           <label for="html-format">HTML</label><br>
           <input type="radio" id="text-format" name="format" value="text">
@@ -117,10 +121,9 @@
         </fieldset>
       </div>
 
+
         <button type="submit">Sign Up</button>
-
-
-    </form>
+      </form>
     <footer>
       <p>Copyright The Code Review</p>
     </footer>
