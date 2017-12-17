@@ -1,0 +1,132 @@
+<!Doctype html>
+<html>
+<head>
+  <title>The Code Review</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>THE CODE REVIEW</h1>
+  </header>
+
+  <div class="content">
+    <div class="intro">
+      <h2>Signup for our newsletter</h2>
+      <p class="intro-message">Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
+
+      <form action="index.html" method="post">
+        <div class="contact">
+        <fieldset class="first">
+          <legend>Contact Information</legend>
+          <label class="right" for="full-name">Full name</label>
+          <input required type="text" id="full-name" name="name" placeholder="Required">
+
+          <label class="right" for="user-email">Email Address</label>
+          <input required type="email" id="user-email" name="user-email" placeholder="Required">
+
+          <label class="right" for="phone-number">Phone Number</label>
+          <input required type="tel" id="phone-number" name="phone-number" placeholder="(123) 555-1234">
+
+          <label class="right" for="address">Street Address</label>
+          <input required type="text" id="address" name="address" placeholder="742 Evergreen Terrace">
+
+          <label class="right" for="city">City</label>
+          <input required type="text" id="city" name="city" placeholder="Springfield">
+
+          <label class="right" for="state">State</label>
+          <select required id="state" name="state">
+            <option label="--Choose State--" value=""></option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arizona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="florida">Florida</option>
+            <option value="georgia">Georgia</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+            <option value="illinois">Illinois</option>
+            <option value="indiana">Indiana</option>
+            <option value="iowa">Iowa</option>
+            <option value="kansas">Kansas</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="louisiana">Louisiana</option>
+            <option value="maine">Maine</option>
+            <option value="maryland">Maryland</option>
+            <option value="massachusetts">Massachusetts</option>
+            <option value="michigan">Michigan</option>
+            <option value="minnesota">Minnesota</option>
+            <option value="mississippi">Mississippi</option>
+            <option value="missouri">Missouri</option>
+            <option value="montana">Montana</option>
+            <option value="nebraska">Nebraska</option>
+            <option value="nevada">Nevada</option>
+            <option value="new-hampshire">New Hampshire</option>
+            <option value="new-jersey">New Jersey</option>
+            <option value="new-mexico">New Mexico</option>
+            <option value="new-york">New York</option>
+            <option value="north-carolina">North Carolina</option>
+            <option value="north-dakota">North Dakota</option>
+            <option value="ohio">Ohio</option>
+            <option value="oklahoma">Oklahoma</option>
+            <option value="oregon">Oregon</option>
+            <option value="pennsylvania">Pennsylvania</option>
+            <option value="rhode-island">Rhode Island</option>
+            <option value="south-carolina">South Carolina</option>
+            <option value="south-dakota">South Dakota</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="texas">Texas</option>
+            <option value="utah">Utah</option>
+            <option value="vermont">Vermont</option>
+            <option value="virginia">Virginia</option>
+            <option value="washington">Washingtion</option>
+            <option value="west-virginia">West Virginia</option>
+            <option value="wisconsin">Wisconsin</option>
+            <option value="wyoming">Wyoming</option>
+          </select><br>
+
+          <label class="right" for="zip-code">Zip Code</label>
+          <input required class="zip" type="text" id="zip-code" name="zip-code" placeholder="12345">
+        </fieldset>
+      </div>
+
+      <div class="newsletter">
+        <fieldset>
+          <legend>Newsletter</legend>
+          <label class="choices">Select the newsletters you would like to recieve</label><br>
+          <input type="checkbox" id="html" name="newsletter" value="html-news">
+          <label for="html">HTML News</label><br>
+          <input type="checkbox" id="css" name="newsletter" value="css-news">
+          <label for="css">CSS News</label><br>
+          <input type="checkbox" id="javascript" name="newsletter" value="javascript-news">
+          <label for="javascript">Javascript News</label><br><br>
+
+          <label class="choices">Newsleter format</label>
+          <input type="radio" id="html-format" name="format" value="html">
+          <label for="html-format">HTML</label><br>
+          <input type="radio" id="text-format" name="format" value="text">
+          <label for="text-format">Plain text</label><br><br>
+
+          <label for="other-topics">Other topics you'd like to hear about</label>
+          <textarea id="other-topics" name="other-topics">
+          </textarea><br>
+        </fieldset>
+      </div>
+
+
+        <button type="submit">Sign Up</button>
+      </form>
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
+  </div>
+</body>
+</html>

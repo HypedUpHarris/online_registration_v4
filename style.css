@@ -1,0 +1,130 @@
+body {
+  background: #DFEAF4;
+}
+body,
+h1 {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+.content {
+  margin: 5px;
+}
+header{
+  background: #495f71;
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+  font-size: .75em;
+}
+.intro {
+  padding-bottom: 2em;
+  border-bottom: solid 3px black;
+}
+.intro>h2 {
+  margin: 20px 0 5px;
+}
+.intro-message {
+  margin: 0;
+}
+
+.contact,
+.newsletter {
+  border-top: solid 1px black;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+legend {
+  font-weight: bold;
+  font-size: 18px;
+}
+label {
+  color: grey;
+}
+fieldset {
+  border: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: #F1F1F2;
+  border: none;
+}
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  background: #F1F1F2;
+}
+input[name*="zip-code"]{
+  width: 50%;
+  display: block;
+}
+input,
+select {
+  margin: 4px 0 7px;
+  transition: background-color 1s;
+}
+.choices {
+  display: block;
+  margin: 0;
+}
+
+
+button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background: #4FC2CA;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.intro,
+footer {
+  text-align: center;
+}
+footer {
+  font-style: italic;
+}
+
+/* Focus Styles*/
+
+input:focus,
+select:focus {
+  outline:2px solid #096F76;
+  background-color:  #b3e0ff;
+}
+
+
+
+/* Media */
+@media(min-width:768px) {
+  .content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  fieldset {
+    padding: 0;
+  }
+  .right {
+    width: 20%;
+    display: inline-block;
+    margin: auto;
+  }
+  .first > input,
+  .first > select {
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .first > .zip {
+    width: 30%;
+    display: inline-block;
+  }
+}
